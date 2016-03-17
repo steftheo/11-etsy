@@ -3,11 +3,30 @@
 /* global fetchEtsy */
 
 /**
- * Takes a results object and renders it to the DOM
+ * Takes a single result from Etsy and creates a DOM element to represent it
+ *
+ * @param  Object: result Object representing a SINGLE store item
+ *   For format look at `docs/shop-item.json`
+ * @return Element: resulting Element representing a SINGLE store item
+ *   This function should not insert the element into the DOM
+ *   See basic HTML format `docs/shop-item.html`
+ *     (You will need more wrapping elements to style things)
+ */
+function showResultTile(result) {
+
+}
+
+/**
+ * Takes a full result payload object and renders it to the DOM
  * @param  Object results Data from Etsy or similar site
+ *   Format is {
+ *     results: [
+ *       // Array of objects that follow the format `docs/shop-item.json`
+ *     ]
+ *   }
  * @return undefined
  */
-function showResults(results) {
+function showAllResults(results) {
 
 }
 

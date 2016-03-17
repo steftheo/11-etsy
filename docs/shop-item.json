@@ -1,0 +1,96 @@
+{
+  "listing_id": 191926498,
+  "state": "active",
+  "user_id": 10534557,
+  "category_id": 69151501,
+  "title": "Nicolas Cage Earrings - Nic Cage Studs",
+  "description": "Nicolas Cage.On your earlobes. - All Sleepy Mountain earrings are made with hypoallergenic studs. - For long lasting earrings, DO NOTget them wet!Clean with dry tissue only.I also recommend not sleeping with them in . - Please read my shipping and refund policies before purchasing. - Shipping: All packages ship through USPS either First - Class Mail® or Priority Mail®.Tracking number provided with all U.S.orders. - International \": Please note, ALL international orders take anywhere from 2 to 8 weeks to arrive. It is not uncommon for it to take all 8 weeks. Please keep this in mind when ordering. Shipping upgrades are offered at checkout. - All items are handmade",
+  "price": "9.00",
+  "currency_code": "USD",
+  "quantity": 1,
+  "tags": [
+    "nicolas cage", "nic cage", "face earrings", "movie earrings", "studs", "film earrings",
+    "sleepy mountain", "sleepymountain", "film studs", "hypoallergenic studs",
+    "nicholas cage", "celebrity earrings", "funny earrings"
+  ],
+  "category_path": [
+    "Jewelry",
+    "Earrings"
+  ],
+  "materials": [],
+  "shop_section_id": 14391117,
+  "featured_rank": null,
+  "url": "https://www.etsy.com/listing/191926498/nicolas-cage-earrings-nic-cage-studs?utm_source=tiylrfrontend&utm_medium=api&utm_campaign=api",
+  "who_made": "i_did",
+  "is_supply": "false",
+  "when_made": "2010_2016",
+  "language": "en-US",
+  "has_variations": false,
+  "taxonomy_id": 1214,
+  "taxonomy_path": [
+    "Jewelry",
+    "Earrings",
+    "Stud Earrings"
+  ],
+  "used_manufacturer": false,
+  "Images": [{
+    "listing_image_id": 986551961,
+    "hex_code": "8B775D",
+    "is_black_and_white": false,
+    "listing_id": 191926498,
+    "rank": 1,
+    "url_fullxfull": "https://img1.etsystatic.com/121/0/5958031/il_fullxfull.986551961_attu.jpg",
+    "full_height": 1051,
+    "full_width": 1500
+  }, {
+    "listing_image_id": 610885476,
+    "hex_code": "8C847F",
+    "is_black_and_white": false,
+    "rank": 2,
+    "url_fullxfull": "https://img0.etsystatic.com/043/0/5958031/il_fullxfull.610885476_qeet.jpg",
+    "full_height": 648,
+    "full_width": 968
+  }, {
+    "listing_image_id": 827497082,
+    "hex_code": "000000",
+    "is_black_and_white": null,
+    "rank": 3,
+    "url_75x75": "https://img0.etsystatic.com/074/0/5958031/il_75x75.827497082_aer5.jpg",
+    "url_fullxfull": "https://img0.etsystatic.com/074/0/5958031/il_fullxfull.827497082_aer5.jpg",
+    "full_height": 1115,
+    "full_width": 1500
+  }, {
+    "listing_image_id": 610885490,
+    "hex_code": "A58F73",
+    "is_black_and_white": false,
+    "rank": 4,
+    "url_fullxfull": "https://img0.etsystatic.com/030/0/5958031/il_fullxfull.610885490_m1aw.jpg",
+    "full_height": 1000,
+    "full_width": 1494
+  }, {
+    "listing_image_id": 610885484,
+    "hex_code": "A48E71",
+    "is_black_and_white": false,
+    "rank": 5,
+    "url_fullxfull": "https://img0.etsystatic.com/027/0/5958031/il_fullxfull.610885484_e8y9.jpg",
+    "full_height": 1000,
+    "full_width": 1494
+  }],
+  "Shop": {
+    "shop_id": 5958031,
+    "shop_name": "SleepyMountain",
+    "user_id": 10534557,
+    "title": "Handmade Jewelry - Stud Earrings",
+    "announcement": "Sleepy Mountain earrings are made with titanium posts, which are nickel - free and considered hypoallergenic.They can also be made with sterling silver upon request. + Message me with any questions or special orders.Like SleepyMountain on Facebook https: //www.facebook.com/TheSleepyMountain Follow me on twitter\": http://twitter.com/sleepy_mountain Visit my personal blog for tutorials, giveaways and personal updates. http://thesleepymountain.com",
+    "currency_code": "USD",
+    "listing_active_count": 60,
+    "digital_listing_count": 0,
+    "url": "https://www.etsy.com/shop/SleepyMountain?utm_source=tiylrfrontend&utm_medium=api&utm_campaign=api",
+    "image_url_760x100": "https://img1.etsystatic.com/009/0/5958031/iusb_760x100.11217057_hndw.jpg",
+    "num_favorers": 16977,
+    "languages": [
+      "en-US"
+    ],
+    "icon_url_fullxfull": "https://img1.etsystatic.com/071/0/5958031/isla_fullxfull.16013525_ohy0nm4q.jpg",
+  }
+}
