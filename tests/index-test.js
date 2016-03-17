@@ -1,1 +1,46 @@
 'use strict';
+
+/* global createResultShopItem */
+
+test(`it can create a result shopItem element from the data`, (assert) => {
+  const info = {
+    title: `Jason`,
+    Images: [
+      {
+        url_fullxfull: `https://img0.etsystatic.com/027/0/5958031/il_fullxfull.610885484_e8y9.jpg`,
+      },
+    ],
+    Shop: {
+      shop_name: `SleepyMountain`,
+    },
+  };
+
+  // Check the shop item element
+  const shopItem = createResultShopItem(info);
+  assert.ok(shopItem instanceof Element,
+    `The createResultShopItem function should return an Element object
+      (see document.createElement)`);
+  assert.ok(shopItem.classList.contains(`shop-item`),
+    `The returned element should have a class 'shop-item'`);
+
+  // Check the title
+  const title = shopItem.querySelector(`h3.shop-item__title`);
+  assert.ok(title,
+    `The returned element contains an element with the class 'shop-item__title'`);
+  assert.equal(title.innerText.trim(), info.title,
+    `The shop item title contains the shop item's title from the data`);
+
+  // Check the shop name
+  const shopName = shopItem.querySelector(`h4.shop-item__shop-name`);
+  assert.ok(shopName,
+    `The returned element contains an element with the class 'shop-item__shop-name'`);
+  assert.equal(shopName.innerText.trim(), info.Shop.shop_name,
+    `The shop item shopName contains the shop item's shopName from the data`);
+
+  // Check shop item picture
+  const pic = shopItem.querySelector(`img.shop-item__pic`);
+  assert.ok(pic,
+    `The returned element contains an 'img' element with the class 'shop-item__pic'`);
+  assert.equal(pic.getAttribute(`href`), info.Images[0].url_fullxfull,
+    `The shop item pic has an href from the first Image url`);
+});

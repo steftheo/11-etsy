@@ -12,13 +12,13 @@
  *   See basic HTML format `docs/shop-item.html`
  *     (You will need more wrapping elements to style things)
  */
-function showResultTile(result) {
+function createResultShopItem(result) {
 
 }
 
 /**
  * Takes a full result payload object and renders it to the DOM
- * @param  Object results Data from Etsy or similar site
+ * @param  Object response Data from Etsy or source
  *   Format is {
  *     results: [
  *       // Array of objects that follow the format `docs/shop-item.json`
@@ -26,8 +26,19 @@ function showResultTile(result) {
  *   }
  * @return undefined
  */
-function showAllResults(results) {
+function showAllResults(response) {
+  // Get the products element from the DOM
 
+  // Clear the contents of the products element
+
+  // Set 'items' to the results array from the response
+  const items;
+
+  for (var i = 0; i < items.length; i++) {
+    // Create a new shop item element for each item in items
+
+    // Append current shop item element to the products element
+  }
 }
 
 /**
