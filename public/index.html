@@ -7,6 +7,44 @@
 </head>
 <body>
 
+  <header class="site-header">
+    <nav class="top-nav">
+      <div class="container">
+        <div class="top-nav__row">
+          <h1 class="top-nav__logo">Etsy</h1>
+          <div class="top-nav__search">
+            <div class="input-addon">
+              <input type="text" class="input-addon__input" value="Yoshi">
+              <button class="input-addon__btn">Search</button>
+            </div>
+          </div>
+
+          <div class="top-nav__right">
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <a class="user-nav__link" href="#sell">Sell on Etsy</a>
+              </li>
+              <li class="user-nav__item">
+                <a class="user-nav__link" href="#register">Register</a>
+              </li>
+              <li class="user-nav__item user-nav__item--btn">
+                <a class="user-nav__link" href="#login">Sign In</a>
+              </li>
+              <li class="user-nav__item user-nav__item--cart">
+                <a class="user-nav__link" href="#login">
+                  <span class="cart-stack">
+                    <span class="cart-stack__icon fa fa-cart-plus"></span>
+                    Cart
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
   <div id="products"></div>
 
   <script src="/app.js" charset="utf-8"></script>
