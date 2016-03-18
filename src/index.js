@@ -43,10 +43,14 @@ function showAllResults(response) {
 
 /**
  * Function should look up a searchTerm using the `getData` function
+ *   and then render the results to the DOM
  * @param  String searchTerm
  * @param  Function getData
+ *   Looks up data given an argument 'searchTerm' and returns a promise when complete
  * @return undefined
  */
 function searchEtsy(searchTerm, getData = fetchEtsy) {
-
+  return getData(searchTerm).then((results) => {
+    showAllResults(results);
+  });
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-/* global createResultShopItem showAllResults */
+/* global createResultShopItem showAllResults searchEtsy */
 
 QUnit.module(`Etsy Shop`, () => {
   const itemOne = {
@@ -108,5 +108,95 @@ QUnit.module(`Etsy Shop`, () => {
       `showAllResults should reset products children`);
 
     products.remove();
+  });
+
+  const cenaData = {
+    results: [
+      {
+        title: `John Cena`,
+        price: `22.50`,
+        Images: [
+          {
+            url_fullxfull: `https://placecage.com/400/400`,
+          },
+        ],
+        Shop: {
+          shop_name: `Regal Cena`,
+        },
+      },
+    ],
+  };
+
+  const cageData = {
+    results: [
+      {
+        title: `Nic Cage`,
+        price: `1000.01`,
+        Images: [
+          {
+            url_fullxfull: `https://fillmurray.com/500/500`,
+          },
+        ],
+        Shop: {
+          shop_name: `Everyone's Favorite`,
+        },
+      },
+      {
+        title: `Face Off`,
+        price: `2.10`,
+        Images: [
+          {
+            url_fullxfull: `https://fillmurray.com/5000/5000`,
+          },
+        ],
+        Shop: {
+          shop_name: `Noones's Favorite`,
+        },
+      },
+    ],
+  };
+
+  function fakeData(searchTerm) {
+    return new Promise((resolve) => {
+      if (searchTerm === `cage`) {
+        resolve(cageData);
+      } else {
+        resolve(cenaData);
+      }
+    });
+  }
+
+  test(`it can search for a set of data`, (assert) => {
+    // Tell tests that things here will be async
+    const done = assert.async();
+
+    const products = document.createElement(`div`);
+    document.querySelector(`body`).appendChild(products);
+    products.id = `products`;
+
+    // Wait for searchEtsy to finish it's promise
+    //   since 'fakeData' is async
+    searchEtsy(`cena`, fakeData).then(() => {
+      const shopItemOne = products.querySelector(`.shop-item`);
+
+      testUiForItem(shopItemOne, cenaData.results[0], assert,
+        `First item from cenaData`);
+
+      // Wait for searchEtsy to finish it's promise
+      //   since 'fakeData' is async
+      return searchEtsy(`cage`, fakeData);
+    }).then(() => {
+      const cageOne = products.querySelector(`.shop-item`);
+      const cageTwo = products.querySelector(`.shop-item:last-of-type`);
+
+      testUiForItem(cageOne, cageData.results[0], assert,
+        `First item from cageData`);
+
+      testUiForItem(cageTwo, cageData.results[1], assert,
+        `Second item from cageData`);
+
+      products.remove();
+      done();
+    });
   });
 });
