@@ -10,7 +10,9 @@ function fetchEtsy(searchTerm) {
   const url = `https://api.etsy.com/v2/listings/active.js?` +
     `api_key=${apiKey}&keywords=${searchTerm}&includes=Images,Shop&sort_on=score`;
 
-  return fetch(url).then((res) => {
+  return fetch(url, {
+    mode: `no-cors`,
+  }).then((res) => {
     return res.json;
   });
 }
