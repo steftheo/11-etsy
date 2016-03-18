@@ -32,9 +32,9 @@ function showAllResults(response) {
   // Clear the contents of the products element
 
   // Set 'items' to the results array from the response
-  const items;
+  const items = 2; // 2 is only here to stop an error
 
-  for (var i = 0; i < items.length; i++) {
+  for (let i = 0; i < items.length; i++) {
     // Create a new shop item element for each item in items
 
     // Append current shop item element to the products element
