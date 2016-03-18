@@ -42,13 +42,15 @@ test(`it can create a result shopItem element from the data`, (assert) => {
   const pic = shopItem.querySelector(`img.shop-item__pic`);
   assert.ok(pic,
     `The returned element contains an 'img' element with the class 'shop-item__pic'`);
-  assert.equal(pic.getAttribute(`href`), info.Images[0].url_fullxfull,
-    `The shop item pic has an href from the first Image url`);
+  assert.equal(pic.getAttribute(`src`), info.Images[0].url_fullxfull,
+    `The shop item pic has an src from the first Image url`);
+  assert.equal(pic.getAttribute(`alt`), info.title,
+    `The shop item pic has an alt from the shop item's name`);
 
   // Check shop item price
-  const price = shopItem.querySelector(`img.shop-item__price`);
+  const price = shopItem.querySelector(`.shop-item__price`);
   assert.ok(price,
-    `The returned element contains an 'img' element with the class 'shop-item__price'`);
+    `The returned element contains an 'p' element with the class 'shop-item__price'`);
   assert.equal(price.innerText.trim(), `$1.01`,
     `The shop item price contains the shop item's price from the data`);
 });
