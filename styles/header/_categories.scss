@@ -14,6 +14,6 @@
 
 .nav__categories {
   border: $inset-shadow;
-  border-bottom: lighten($brand-tan, 10%) solid 0.1rem $inset-shadow;
+  box-shadow: $inset-shadow;
   background: $brand-white;
 }
