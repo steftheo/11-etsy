@@ -1,0 +1,18 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 0 $gutter;
+
+  &__items {
+    padding: $gutter;
+    color: $brand-gray;
+    font-size: 14px;
+  }
+
+}
+
+.nav__categories {
+  border: $inset-shadow;
+  border-bottom: lighten($brand-tan, 10%) solid 0.1rem $inset-shadow;
+  background: $brand-white;
+}
