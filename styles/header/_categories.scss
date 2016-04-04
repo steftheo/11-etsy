@@ -1,0 +1,19 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 0 $gutter;
+
+  &__items {
+    padding: 1.3rem;
+    color: $brand-gray;
+    font-size: 15px;
+
+  }
+
+}
+
+.nav__categories {
+  border: $inset-shadow;
+  box-shadow: $inset-shadow;
+  background: $brand-white;
+}

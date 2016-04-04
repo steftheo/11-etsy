@@ -1,0 +1,87 @@
+.sidebar__results {
+  margin: 0;
+}
+
+.sidebar__results-header {
+  margin-top: 3%;
+  margin-left: 3rem;
+  font-size: 14px;
+}
+
+.sidebar__results-nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 23%;
+  margin-left: 3rem;
+  background: $brand-white;
+  box-shadow: $inset-shadow;
+}
+
+.sidebar__results-nav-header {
+  margin-bottom: -1%;
+  padding-left: 1rem;
+  font-size: 14px;
+}
+
+.sidebar__results-item {
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  font-size: 14px;
+  color: $brand-light-blue;
+  list-style: none;
+}
+
+
+.sidebar__search-header {
+  margin-top: 3%;
+  margin-left: 3rem;
+  font-size: 14px;
+}
+
+.sidebar__search {
+  display: flex;
+  flex-direction: column;
+  max-width: 23%;
+  margin-left: 3rem;
+  border: $inset-shadow;
+  background: $brand-white;
+  box-shadow: $inset-shadow;
+}
+
+.sidebar__search-title {
+  margin-bottom: -1%;
+  padding-left: 1rem;
+  font-size: 14px;
+}
+
+.sidebar__search-categories {
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: $brand-light-blue;
+  font-size: 14px;
+
+}
+
+.sidebar__price {
+  border-top: 2px solid $brand-light-gray;
+
+}
+
+.sidebar__price-title {
+  margin-bottom: -1%;
+  padding-left: 1rem;
+  font-size: 14px;
+}
+
+.price__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $gutter;
+  max-width: 16rem;
+}
+
+.price__input {
+  max-width: 5rem;
+  color: $brand-gray;
+}

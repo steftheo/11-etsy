@@ -13,7 +13,10 @@
  *     (You will need more wrapping elements to style things)
  */
 function createResultShopItem(result) {
-
+  for (let i = 0; i < result.length; i++) {
+    return result[i];
+  }
+  return `shop-item`;
 }
 
 /**
